@@ -260,8 +260,8 @@ if __name__ == "__main__":
     print("Exploring data... (might take a while)")
     # NOTE: This can take a while, so comment out if you're interested in
     # the other stuff!
-    # measure_mask_differences(severity)
-    # explore_data(severity, tstamps)
+    measure_mask_differences(severity)
+    explore_data(severity, tstamps)
 
     # Reduce the size of the data and compute the anomoly
     reduction_factor = 10
