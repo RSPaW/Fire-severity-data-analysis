@@ -75,9 +75,5 @@ if __name__ == "__main__":
     folder = Path("/data/bmeyers/DBCA/data/monthly_severity_grids")
     files = sorted(folder.glob("*.tif"))
 
-    odname = Path("severity_rasters_i8.npy")
-    otname = Path("severity_rasters_timestamps.npy")
-    if not odname.exists() or not otname.exists():
-        print("Constructing severity matrix...")
-        construct_severity_matrix(files, to_dtype=np.int8)
-
+    print("Constructing severity matrix...")
+    construct_severity_matrix(files, to_dtype=np.int8)

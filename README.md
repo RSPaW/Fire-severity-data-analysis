@@ -23,7 +23,7 @@ When starting from monthly rasterised data (currently assuming TIF format), wher
 python convert_monthly_rasters_to_matrix.py /path/to/tif/image/files
 ```
 Two files will be created:
-  - `severity_rasters_i8.npy`
-  - `severity_rasters_timestamps.npy`
+  - `severity.npy`
+  - `timestamps.npy`
 
 which encode the severity measurements (as 8-bit integers) and timestamps (as `numpy.datetime64` objects). These may then simply be loaded into memory via `numpy.load` or, indeed, a mem-map via `numpy.lib.format.open_memmap()`. 
