@@ -177,7 +177,9 @@ def plot_parameter_relationships(
                 eco_data["sev"],
                 C=eco_data["solb"],
                 gridsize=50,
-                cmap="coolwarm",
+                cmap="viridis",
+                vmin=1,
+                vmax=5,
                 mincnt=1,
                 reduce_C_function=np.median,
             )
